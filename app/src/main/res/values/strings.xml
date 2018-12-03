@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ContactBook</string>
+    <string name="permission_denied_txt">Please grant the permission for showing contacts</string>
+</resources>
