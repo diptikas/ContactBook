@@ -96,7 +96,6 @@ public class ContactPresenter {
     }
 
     public ArrayList<Contact> removeDuplicateContacts(ArrayList<Contact> contacts){
-
         return contacts;
     }
 
