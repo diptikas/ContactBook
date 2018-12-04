@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="padding_nano">3dp</dimen>
+    <dimen name="contact_icon">58dp</dimen>
+
+
+</resources>

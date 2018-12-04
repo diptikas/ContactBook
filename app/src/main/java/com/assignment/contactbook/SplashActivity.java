@@ -6,7 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 public class SplashActivity extends AppCompatActivity {
-    private static final long SPLASH_DELAY = 1000;
+    private static final long SPLASH_DELAY = 2500;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

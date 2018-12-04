@@ -2,16 +2,25 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="3dp"
+    android:padding="@dimen/padding_nano"
     android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/contact_iv"
+        android:layout_width="@dimen/contact_icon"
+        android:layout_height="@dimen/contact_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:src="@drawable/contact_icon" />
 
     <TextView
         android:id="@+id/name_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         tools:text="Bobbbbb"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_toEndOf="@+id/contact_iv"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold" />
 
@@ -19,9 +28,10 @@
         android:id="@+id/phone_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_below="@+id/name_tv"
         tools:text="12345"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_toEndOf="@+id/contact_iv"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 
