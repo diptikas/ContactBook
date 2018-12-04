@@ -5,9 +5,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -45,7 +45,7 @@ public class ContactBookActivity extends AppCompatActivity {
             requestPermissions(new String[]{Manifest.permission.READ_CONTACTS}, PERMISSIONS_REQUEST_READ_CONTACTS);
         } else {
             // Android version is lesser than 6.0 or the permission is already granted.
-            listContacts = new ContactPresenter(this).fetchAll();
+            listContacts = new ContactPresenter(this).fetchAllContacts();
             ContactsAdapter adapterContacts = new ContactsAdapter(this, listContacts);
             lvContacts.setAdapter(adapterContacts);
 
